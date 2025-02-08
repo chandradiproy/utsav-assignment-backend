@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: hackathon-chatbot-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    runtime: python-3.12.8
