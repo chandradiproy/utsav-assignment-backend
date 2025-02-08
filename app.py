@@ -191,7 +191,7 @@ def query():
             temperature=0.3
         )
         final_response = final_completion.choices[0].message.content.strip()
-        print("Final Response:\n", final_response)
+        # print("Final Response:\n", final_response)
         return jsonify({"response": final_response})
     
     except Exception as e:
