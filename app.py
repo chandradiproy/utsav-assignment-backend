@@ -158,11 +158,11 @@ def query():
             temperature=0.3
         )
         planning_response = planning_completion.choices[0].message.content.strip()
-        print("Planning Response:\n", planning_response)
+        # print("Planning Response:\n", planning_response)
 
         # Parse the JSON plan from the planning response.
         plan_obj = parse_plan_response(planning_response)
-        print("Parsed Plan:", plan_obj)
+        # print("Parsed Plan:", plan_obj)
 
         # Step 2: If plan indicates a database query, execute it.
         if plan_obj.get("action", "none") == "query":
