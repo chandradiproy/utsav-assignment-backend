@@ -2,7 +2,7 @@ __pycache__
 venv
 .env
 data_fetcher.py
-deekseek_llm.py
+deepseek_llm.py
 index.py
 summarizer.py
 test.py

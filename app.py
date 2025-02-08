@@ -4,11 +4,14 @@ from db import db  # Import the database connection from your db.py
 from flask_cors import CORS
 import json
 import re
+from dotenv import load_dotenv
+import os
+load_dotenv()
 
 # Initialize the Hugging Face InferenceClient with your API key.
 client = InferenceClient(
     provider="hf-inference",
-    api_key="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"
+    api_key=os.getenv("HF_API_KEY")
 )
 
 # Common database schema (this text is inserted in the prompt)
