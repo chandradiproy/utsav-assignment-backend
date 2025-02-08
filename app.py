@@ -11,7 +11,7 @@ load_dotenv()
 # Initialize the Hugging Face InferenceClient with your API key.
 client = InferenceClient(
     provider="hf-inference",
-    api_key=os.getenv("HF_API_KEY")
+    
 )
 
 # Common database schema (this text is inserted in the prompt)
