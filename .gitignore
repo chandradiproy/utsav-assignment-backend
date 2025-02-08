@@ -1,0 +1,9 @@
+__pycache__
+venv
+.env
+data_fetcher.py
+deekseek_llm.py
+index.py
+summarizer.py
+test.py
+test2.py
